@@ -86,39 +86,39 @@ export const skills = [
 
 export const portfolio = [
   {
-    title: { zh: '智能客服多智能体助理', en: 'Multi-Agent Customer Assistant' },
+    title: { zh: '商审对客 Agent 演进方案', en: 'Customer-Facing Agent Evolution Framework' },
     desc: {
-      zh: '基于 LLM 的在线对客多智能体系统，独立解决率 0→60%，覆盖安抚与一键申诉场景。',
-      en: 'An LLM-powered multi-agent online customer assistant, lifting model-only resolution from 0 to 60%.',
+      zh: '主导调研并设计客服智能化 L1→L4 演进路径：从纯人工、AI 辅助采纳，到 AI+人回复，再到 AI 主答+人盯盘的分层协同模式，推动流程从 7 节点压缩到平台内闭环，迭代周期从 1 周缩短到 1-2 天。',
+      en: 'Led research and design of an L1→L4 customer-service intelligence roadmap — from fully manual, to AI-suggested replies, to AI+human hybrid, to AI-led with human oversight — cutting the workflow from 7 handoff nodes to a closed-loop platform and shrinking iteration cycles from 1 week to 1-2 days.',
+    },
+    tag: { zh: '智能客服', en: 'Customer Service AI' },
+    link: '#',
+  },
+  {
+    title: { zh: '灵轮 · 智能归因工作台', en: 'Linglun · Intelligent Attribution Platform' },
+    desc: {
+      zh: '模力星探赛道二 Agent 应用：面向多团队协作的一站式归因优化平台，外接智能归因 Agent 提供归因建议，把归因效率从 2h/天/人提升到 30min/天/人，并沉淀精确率看板与数据飞轮。',
+      en: 'A "Moli Xingtan" Agent track entry: a one-stop attribution platform for multi-team collaboration, pairing an attribution agent with case analytics to cut per-person attribution time from 2h/day to 30min/day and build a precision dashboard and data flywheel.',
     },
     tag: { zh: 'LLM 智能体', en: 'LLM Agents' },
     link: '#',
   },
   {
-    title: { zh: '风险治理归因平台', en: 'Risk Governance Attribution Platform' },
+    title: { zh: 'GOODGIS规划工具平台', en: 'GoodGIS Planning Tooling Platform' },
     desc: {
-      zh: '融合策略治理与模型治理的一站式风险处置链路，打通检测、处置与效果回流。',
-      en: 'An end-to-end risk governance pipeline fusing policy- and model-based governance into one closed loop.',
-    },
-    tag: { zh: '模型运营', en: 'Model Ops' },
-    link: '#',
-  },
-  {
-    title: { zh: '院内 GIS 工具平台', en: 'In-house GIS Tooling Platform' },
-    desc: {
-      zh: '基于 ArcGIS Pro 开发的内部平台，4 大模块、41 项工具，服务 4000+ 次调用。',
-      en: 'An internal platform built on ArcGIS Pro APIs with 4 modules and 41 tools, serving 4,000+ calls.',
+      zh: '基于 ArcGIS Pro 接口自研的院内 GIS 产品，涵盖 4 大模块、41 项工具，服务 4000+ 次调用；其中"镇村国空智规平台"已获国家计算机软件著作权登记（登记号 2024SR1463597）。',
+      en: 'A self-built in-house GIS product on ArcGIS Pro APIs with 4 modules and 41 tools, serving 4,000+ calls; its "Village & Town Spatial Planning Platform" module holds an official Chinese software copyright registration (No. 2024SR1463597).',
     },
     tag: { zh: '软件开发', en: 'Software Dev' },
     link: '#',
   },
   {
-    title: { zh: 'AIGC 生产工作流', en: 'AIGC Production Workflow' },
+    title: { zh: '新加坡组屋能源 / 水资源自供给研究', en: 'HDB Energy & Water Self-Sufficiency Research' },
     desc: {
-      zh: '测评 9 款主流 AIGC 工具，沉淀 ComfyUI / Stable Diffusion 生产级工作流。',
-      en: 'Evaluated 9 mainstream AIGC tools and shipped a ComfyUI/Stable Diffusion production workflow.',
+      zh: '新加坡国立大学可持续设计研究项目：基于 12623 栋 HDB 建筑数据建模，量化屋顶光伏能源供给与非饮用水自供给潜力，产出面积—容积比与产水效率的量化规律。',
+      en: 'A sustainable-design research project at NUS: modeled 12,623 HDB building blocks to quantify rooftop solar energy supply and non-potable water self-sufficiency, deriving site-area/plot-ratio efficiency patterns.',
     },
-    tag: { zh: 'AIGC', en: 'AIGC' },
+    tag: { zh: '研究 · 数据建模', en: 'Research · Data Modeling' },
     link: '#',
   },
 ]
