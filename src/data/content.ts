@@ -106,7 +106,6 @@ export const portfolio = [
     tag: { zh: 'LLM 智能体', en: 'LLM Agents' },
     link: '#',
     images: [
-      asset('images/portfolio/attribution-slide-1.png'),
       asset('images/portfolio/attribution-slide-2.png'),
       asset('images/portfolio/attribution-slide-3.png'),
       asset('images/portfolio/attribution-slide-4.png'),
