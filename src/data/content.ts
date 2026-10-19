@@ -22,10 +22,12 @@ export const education = {
     {
       school: { zh: '新加坡国立大学', en: 'National University of Singapore' },
       degree: { zh: '可持续设计硕士', en: 'M.Sc. in Sustainable Design' },
+      period: { zh: '2021 — 2022', en: '2021 — 2022' },
     },
     {
       school: { zh: '天津大学', en: 'Tianjin University' },
       degree: { zh: '城乡规划学士', en: 'B.Eng. in Urban & Rural Planning' },
+      period: { zh: '2016 — 2021', en: '2016 — 2021' },
     },
   ],
 }

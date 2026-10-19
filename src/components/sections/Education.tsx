@@ -13,7 +13,8 @@ export default function Education() {
               <GraduationCap className="size-4" />
             </span>
             <div className="min-w-0">
-              <p className="text-sm font-semibold text-foreground">{item.school.zh}</p>
+              <p className="text-xs text-muted-foreground/50">{item.period.zh}</p>
+              <p className="mt-0.5 text-sm font-semibold text-foreground">{item.school.zh}</p>
               <p className="text-xs text-muted-foreground/60">{item.school.en}</p>
               <p className="mt-1 text-xs text-muted-foreground">{item.degree.zh}</p>
               <p className="text-xs text-muted-foreground/50">{item.degree.en}</p>

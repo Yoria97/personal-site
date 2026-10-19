@@ -21,11 +21,11 @@ export default function HomePage() {
           <aside className="w-full shrink-0 lg:w-72">
             <About />
             <Skills />
-            <Education />
           </aside>
           {/* 右侧主栏：经历 */}
           <main className="min-w-0 flex-1">
             <Timeline />
+            <Education />
           </main>
         </div>
       </div>
