@@ -116,6 +116,7 @@ export const portfolio = [
     },
     tag: { zh: '智能客服', en: 'Customer Service AI' },
     link: '#',
+    icon: asset('images/portfolio/icons/icon-1-customer-service.png'),
     images: [
       asset('images/portfolio/customer-agent-l1.png'),
       asset('images/portfolio/customer-agent-l2.png'),
@@ -141,6 +142,7 @@ export const portfolio = [
     },
     tag: { zh: 'LLM 智能体', en: 'LLM Agents' },
     link: '#',
+    icon: asset('images/portfolio/icons/icon-2-attribution.png'),
     images: [
       asset('images/portfolio/attribution-slide-2.png'),
       asset('images/portfolio/attribution-slide-3.png'),
@@ -168,6 +170,7 @@ export const portfolio = [
     },
     tag: { zh: '软件开发', en: 'Software Dev' },
     link: '#',
+    icon: asset('images/portfolio/icons/icon-3-gis.png'),
     video: asset('videos/goodgis-demo.mp4'),
     videoPoster: asset('videos/goodgis-demo-poster.jpg'),
   },
@@ -179,6 +182,7 @@ export const portfolio = [
     },
     tag: { zh: '研究 · 数据建模', en: 'Research · Data Modeling' },
     link: '#',
+    icon: asset('images/portfolio/icons/icon-4-research.png'),
     images: [
       asset('images/portfolio/research-slide-1.png'),
       asset('images/portfolio/research-slide-2.png'),

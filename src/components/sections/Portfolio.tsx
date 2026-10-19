@@ -65,9 +65,13 @@ export default function Portfolio() {
           const hasMedia = Boolean(item.images?.length || item.video)
           const card = (
             <div className={`group flex h-full flex-col justify-between rounded-xl border ${accent.border} bg-background p-5 text-left transition-all duration-200 hover:shadow-md hover:-translate-y-0.5`}>
-              {/* 封面色块 */}
-              <div className={`mb-4 flex h-10 w-10 items-center justify-center rounded-lg ${accent.bg}`}>
-                <span className={`size-2.5 rounded-full ${accent.dot}`} />
+              {/* 封面图标 */}
+              <div className={`mb-4 flex h-12 w-12 items-center justify-center rounded-lg ${accent.bg}`}>
+                {item.icon ? (
+                  <img src={item.icon} alt="" className="h-9 w-9 object-contain" />
+                ) : (
+                  <span className={`size-2.5 rounded-full ${accent.dot}`} />
+                )}
               </div>
               <div className="flex-1">
                 <div className="flex items-start justify-between gap-2">
