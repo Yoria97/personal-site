@@ -95,7 +95,16 @@ export const portfolio = [
     },
     tag: { zh: '智能客服', en: 'Customer Service AI' },
     link: '#',
-    images: [asset('images/portfolio/customer-agent-1.png'), asset('images/portfolio/customer-agent-2.png')],
+    images: [
+      asset('images/portfolio/customer-agent-l1.png'),
+      asset('images/portfolio/customer-agent-l2.png'),
+      asset('images/portfolio/customer-agent-l3.png'),
+      asset('images/portfolio/customer-agent-l4.png'),
+    ],
+    note: {
+      zh: '由于数据涉密，展示数据为 mock 内容，平台为场景复现。',
+      en: 'Data shown is mocked for confidentiality; the platform is a recreated scenario.',
+    },
   },
   {
     title: { zh: '灵轮 · 智能归因工作台', en: 'Linglun · Intelligent Attribution Platform' },

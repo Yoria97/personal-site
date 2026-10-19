@@ -71,6 +71,13 @@ export default function Portfolio() {
                   {item.images && item.images.length > 0 && (
                     <ImageCarousel images={item.images} alt={item.title.zh} />
                   )}
+                  {item.note && (
+                    <p className="text-xs leading-relaxed text-muted-foreground/70">
+                      {item.note.zh}
+                      <br />
+                      {item.note.en}
+                    </p>
+                  )}
                 </div>
               </DialogContent>
             </Dialog>
