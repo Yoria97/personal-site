@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { fetchVisits, type VisitRow } from '@/lib/analytics'
 
-const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD as string | undefined
+const ADMIN_PASSWORD = 'Xy19971113wang'
 
 function fmt(iso: string) {
   return new Date(iso).toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })
@@ -26,8 +26,7 @@ export default function AdminPage() {
 
   function handleLogin(e: React.FormEvent) {
     e.preventDefault()
-    const expected = ADMIN_PASSWORD || 'admin2024'
-    if (password === expected) {
+    if (password === ADMIN_PASSWORD) {
       setAuthed(true)
     } else {
       setError('密码错误 Wrong password')

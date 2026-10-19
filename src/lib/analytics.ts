@@ -3,8 +3,10 @@
 // VITE_SUPABASE_URL  = https://xxxx.supabase.co
 // VITE_SUPABASE_ANON_KEY = eyJ...
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL as string | undefined
-const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined
+// Supabase anon key 按设计可公开（配合 RLS 策略：仅允许 insert，不允许 select）
+const SUPABASE_URL = 'https://hcpnwfgkuhpkfaciddau.supabase.co'
+const SUPABASE_ANON_KEY =
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhjcG53ZmdrdWhwa2ZhY2lkZGF1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzODgwNTEsImV4cCI6MjEwNzk2NDA1MX0.bB9IpzgaIJzDMIT9ubrnUTGiDOSh2QdgGichbR5YInk'
 
 export async function trackVisit() {
   if (!SUPABASE_URL || !SUPABASE_ANON_KEY) return
