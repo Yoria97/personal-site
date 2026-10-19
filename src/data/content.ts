@@ -77,8 +77,8 @@ export const portfolio = [
 ]
 
 export const contact = {
-  heading: '联系我',
-  desc: '欢迎交流想法、合作机会，或者只是打个招呼。',
-  email: 'hello@example.com',
-  wechatHint: '微信扫码添加',
+  heading: { zh: '联系我', en: 'Contact' },
+  desc: { zh: '欢迎交流想法、合作机会，或者只是打个招呼。', en: 'Open to conversations, collaboration or just a hello.' },
+  email: 'xingyue2021@yeah.net',
+  wechatHint: { zh: '微信扫码添加', en: 'Scan to add WeChat' },
 }
