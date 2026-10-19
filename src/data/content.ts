@@ -133,6 +133,15 @@ export const portfolio = [
     },
     tag: { zh: '研究 · 数据建模', en: 'Research · Data Modeling' },
     link: '#',
+    images: [
+      asset('images/portfolio/research-slide-1.png'),
+      asset('images/portfolio/research-slide-2.png'),
+      asset('images/portfolio/research-slide-3.png'),
+      asset('images/portfolio/research-slide-4.png'),
+      asset('images/portfolio/research-slide-5.png'),
+      asset('images/portfolio/research-slide-6.png'),
+      asset('images/portfolio/research-slide-7.png'),
+    ],
   },
 ]
 
