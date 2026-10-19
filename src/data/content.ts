@@ -105,7 +105,16 @@ export const portfolio = [
     },
     tag: { zh: 'LLM 智能体', en: 'LLM Agents' },
     link: '#',
-    images: [asset('images/portfolio/attribution-1.png'), asset('images/portfolio/attribution-2.png')],
+    images: [
+      asset('images/portfolio/attribution-slide-1.png'),
+      asset('images/portfolio/attribution-slide-2.png'),
+      asset('images/portfolio/attribution-slide-3.png'),
+      asset('images/portfolio/attribution-slide-4.png'),
+      asset('images/portfolio/attribution-slide-5.png'),
+      asset('images/portfolio/attribution-slide-6.png'),
+      asset('images/portfolio/attribution-slide-7.png'),
+      asset('images/portfolio/attribution-slide-8.png'),
+    ],
   },
   {
     title: { zh: 'GOODGIS规划工具平台', en: 'GoodGIS Planning Tooling Platform' },

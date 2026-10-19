@@ -1,3 +1,4 @@
+import ImageCarousel from '@/components/sections/ImageCarousel'
 import {
   Dialog,
   DialogContent,
@@ -67,14 +68,9 @@ export default function Portfolio() {
                       className="w-full rounded-md border border-border"
                     />
                   )}
-                  {item.images?.map((src) => (
-                    <img
-                      key={src}
-                      src={src}
-                      alt={item.title.zh}
-                      className="w-full rounded-md border border-border"
-                    />
-                  ))}
+                  {item.images && item.images.length > 0 && (
+                    <ImageCarousel images={item.images} alt={item.title.zh} />
+                  )}
                 </div>
               </DialogContent>
             </Dialog>
