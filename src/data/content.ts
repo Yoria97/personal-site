@@ -32,8 +32,8 @@ export const timeline = [
     role: { zh: '模型运营', en: 'Model Operations' },
     org: { zh: '快手 · 商业生态与体验', en: 'Kuaishou · Commerce Ecosystem & Experience' },
     desc: {
-      zh: '主导一站式风险治理链路改造，融合策略治理与模型治理；主导 SFT 小尺寸模型基座训练，在提升准召的同时降低机器成本；采用 PDE 模式建成可用的归因平台。',
-      en: 'Led the redesign of an end-to-end risk governance pipeline fusing policy- and model-based governance; led SFT of a small foundation model to lift precision/recall while lowering inference cost; shipped an attribution platform using the PDE model.',
+      zh: '主导 SFT 小尺寸模型基座训练，在提升准召的同时降低机器成本；采用 PDE 模式建成可用的归因平台；参与一站式风险治理链路改造，融合策略治理与模型治理。',
+      en: 'Led SFT of a small foundation model to lift precision/recall while lowering inference cost; shipped an attribution platform using the PDE model; took part in the redesign of an end-to-end risk governance pipeline fusing policy- and model-based governance.',
     },
   },
   {
