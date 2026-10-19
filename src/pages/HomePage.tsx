@@ -16,11 +16,10 @@ export default function HomePage() {
       {/* 双栏主体 */}
       <div className="mx-auto max-w-5xl px-6 pb-0 pt-10 sm:px-10">
         <div className="flex flex-col gap-0 lg:flex-row lg:gap-16">
-          {/* 左侧窄栏：简介 + 技能 + 联系 */}
+          {/* 左侧窄栏：简介 + 技能 */}
           <aside className="w-full shrink-0 lg:w-72">
             <About />
             <Skills />
-            <Contact />
           </aside>
           {/* 右侧主栏：经历 */}
           <main className="min-w-0 flex-1">
@@ -31,6 +30,10 @@ export default function HomePage() {
       {/* 作品全宽展示 */}
       <div className="mx-auto max-w-5xl px-6 sm:px-10">
         <Portfolio />
+      </div>
+      {/* 联系方式放在页面最后，全宽展示 */}
+      <div className="mx-auto max-w-5xl px-6 sm:px-10">
+        <Contact />
       </div>
       <Honors />
       <Footer />
