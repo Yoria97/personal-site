@@ -123,6 +123,13 @@ export const portfolio = [
   },
 ]
 
+export const honors = [
+  { zh: '快手"模力星探" Agent 应用 Top 1（2026）', en: 'Kuaishou "Moli Xingtan" Agent Application, Top 1 (2026)' },
+  { zh: '字节跳动 CQC 数智先锋奖（2026.01）', en: 'ByteDance CQC Digital Pioneer Award (2026.01)' },
+  { zh: '字节跳动 Spot Bonus 用服智能化奖（2025.09）', en: 'ByteDance Spot Bonus (2025.09)' },
+  { zh: '中建西南院"新·质"数字场景大赛二等奖（2024.09）', en: 'CSCEC Digital Scenario Competition, 2nd Prize (2024.09)' },
+]
+
 export const contact = {
   heading: { zh: '联系我', en: 'Contact' },
   desc: { zh: '欢迎交流想法、合作机会，或者只是打个招呼。', en: 'Open to conversations, collaboration or just a hello.' },
