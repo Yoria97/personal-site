@@ -9,6 +9,8 @@ import {
 import SectionHeading from '@/components/sections/SectionHeading'
 import { portfolio } from '@/data/content'
 import { ArrowUpRight } from 'lucide-react'
+import { useState } from 'react'
+import { Play } from 'lucide-react'
 
 const cardAccents = [
   { bg: 'bg-[#4DBAD5]/10', border: 'border-[#4DBAD5]/20', dot: 'bg-[#4DBAD5]' },
@@ -16,6 +18,42 @@ const cardAccents = [
   { bg: 'bg-emerald-500/10', border: 'border-emerald-500/20', dot: 'bg-emerald-400' },
   { bg: 'bg-amber-500/10', border: 'border-amber-500/20', dot: 'bg-amber-400' },
 ]
+
+function LazyVideo({ src, poster }: { src: string; poster?: string }) {
+  const [playing, setPlaying] = useState(false)
+
+  if (!playing) {
+    return (
+      <button
+        type="button"
+        onClick={() => setPlaying(true)}
+        className="group relative block w-full overflow-hidden rounded-md border border-border"
+        aria-label="播放视频"
+      >
+        {poster ? (
+          <img src={poster} alt="视频封面" className="w-full" />
+        ) : (
+          <div className="aspect-video w-full bg-secondary" />
+        )}
+        <span className="absolute inset-0 flex items-center justify-center bg-black/20 transition-colors group-hover:bg-black/30">
+          <span className="flex size-14 items-center justify-center rounded-full bg-white/90 shadow-md transition-transform group-hover:scale-105">
+            <Play className="size-6 fill-foreground text-foreground" />
+          </span>
+        </span>
+      </button>
+    )
+  }
+
+  return (
+    <video
+      src={src}
+      poster={poster}
+      controls
+      autoPlay
+      className="w-full rounded-md border border-border"
+    />
+  )
+}
 
 export default function Portfolio() {
   return (
@@ -73,15 +111,13 @@ export default function Portfolio() {
                   {item.desc.en}
                 </DialogDescription>
                 <div className="mt-4 space-y-3">
-                  {item.video && (
-                    <video
-                      src={item.video}
-                      controls
-                      className="w-full rounded-md border border-border"
-                    />
-                  )}
+                  {item.video && <LazyVideo src={item.video} poster={item.videoPoster} />}
                   {item.images && item.images.length > 0 && (
-                    <ImageCarousel images={item.images} alt={item.title.zh} />
+                    <ImageCarousel
+                      images={item.images}
+                      thumbnails={item.thumbnails}
+                      alt={item.title.zh}
+                    />
                   )}
                   {item.note && (
                     <p className="text-xs leading-relaxed text-muted-foreground/70">

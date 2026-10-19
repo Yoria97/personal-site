@@ -105,6 +105,7 @@ export const skills = [
 ]
 
 const asset = (p: string) => `${import.meta.env.BASE_URL}${p}`
+const thumb = (p: string) => asset(`images/portfolio/thumbs/${p.split('/').pop()!.replace(/\.png$/, '.jpg')}`)
 
 export const portfolio = [
   {
@@ -120,6 +121,12 @@ export const portfolio = [
       asset('images/portfolio/customer-agent-l2.png'),
       asset('images/portfolio/customer-agent-l3.png'),
       asset('images/portfolio/customer-agent-l4.png'),
+    ],
+    thumbnails: [
+      thumb('customer-agent-l1.png'),
+      thumb('customer-agent-l2.png'),
+      thumb('customer-agent-l3.png'),
+      thumb('customer-agent-l4.png'),
     ],
     note: {
       zh: '由于数据涉密，展示数据为 mock 内容，平台为场景复现。',
@@ -143,6 +150,15 @@ export const portfolio = [
       asset('images/portfolio/attribution-slide-7.png'),
       asset('images/portfolio/attribution-slide-8.png'),
     ],
+    thumbnails: [
+      thumb('attribution-slide-2.png'),
+      thumb('attribution-slide-3.png'),
+      thumb('attribution-slide-4.png'),
+      thumb('attribution-slide-5.png'),
+      thumb('attribution-slide-6.png'),
+      thumb('attribution-slide-7.png'),
+      thumb('attribution-slide-8.png'),
+    ],
   },
   {
     title: { zh: 'GOODGIS规划工具平台', en: 'GoodGIS Planning Tooling Platform' },
@@ -153,6 +169,7 @@ export const portfolio = [
     tag: { zh: '软件开发', en: 'Software Dev' },
     link: '#',
     video: asset('videos/goodgis-demo.mp4'),
+    videoPoster: asset('videos/goodgis-demo-poster.jpg'),
   },
   {
     title: { zh: '新加坡组屋能源 / 水资源自供给研究', en: 'HDB Energy & Water Self-Sufficiency Research' },
@@ -170,6 +187,15 @@ export const portfolio = [
       asset('images/portfolio/research-slide-5.png'),
       asset('images/portfolio/research-slide-6.png'),
       asset('images/portfolio/research-slide-7.png'),
+    ],
+    thumbnails: [
+      thumb('research-slide-1.png'),
+      thumb('research-slide-2.png'),
+      thumb('research-slide-3.png'),
+      thumb('research-slide-4.png'),
+      thumb('research-slide-5.png'),
+      thumb('research-slide-6.png'),
+      thumb('research-slide-7.png'),
     ],
   },
 ]
