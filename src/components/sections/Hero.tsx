@@ -2,23 +2,17 @@ import { Button } from '@/components/ui/button'
 import { profile } from '@/data/content'
 import { ArrowDown, Mail } from 'lucide-react'
 
+const asset = (p: string) => `${import.meta.env.BASE_URL}${p}`
+
 export default function Hero() {
   return (
     <section className="relative w-full">
       {/* 全宽封面横幅 */}
       <div
         aria-hidden="true"
-        className="h-52 w-full sm:h-64"
+        className="h-52 w-full bg-cover bg-center sm:h-64"
         style={{
-          background: [
-            'linear-gradient(135deg,',
-            'oklch(0.60 0.14 210) 0%,',
-            'oklch(0.70 0.12 230) 20%,',
-            'oklch(0.78 0.09 250) 40%,',
-            'oklch(0.65 0.13 190) 60%,',
-            'oklch(0.55 0.10 220) 80%,',
-            'oklch(0.72 0.11 200) 100%)',
-          ].join(' '),
+          backgroundImage: `url(${asset('images/hero/banner-cat.jpg')})`,
         }}
       />
 
@@ -26,9 +20,11 @@ export default function Hero() {
       <div className="mx-auto max-w-5xl px-6 sm:px-10">
         {/* 头像叠压在横幅底部 */}
         <div className="relative -mt-12 mb-5 flex items-end gap-5">
-          <div className="relative flex size-24 shrink-0 items-center justify-center rounded-full border-4 border-background bg-accent text-2xl font-bold text-accent-foreground shadow-md sm:size-28">
-            {profile.avatarInitials}
-          </div>
+          <img
+            src={asset('images/hero/avatar.jpg')}
+            alt={profile.name.zh}
+            className="relative size-24 shrink-0 rounded-full border-4 border-background object-cover shadow-md sm:size-28"
+          />
         </div>
 
         {/* 姓名 + 职位 */}
