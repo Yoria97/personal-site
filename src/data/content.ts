@@ -16,6 +16,20 @@ export const profile = {
   },
 }
 
+export const education = {
+  heading: { zh: '教育经历', en: 'Education' },
+  items: [
+    {
+      school: { zh: '新加坡国立大学', en: 'National University of Singapore' },
+      degree: { zh: '可持续设计硕士', en: 'M.Sc. in Sustainable Design' },
+    },
+    {
+      school: { zh: '天津大学', en: 'Tianjin University' },
+      degree: { zh: '城乡规划学士', en: 'B.Eng. in Urban & Rural Planning' },
+    },
+  ],
+}
+
 export const about = {
   heading: { zh: '关于我', en: 'About' },
   paragraphs: [

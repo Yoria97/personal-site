@@ -3,6 +3,7 @@ import Nav from '@/components/sections/Nav'
 import About from '@/components/sections/About'
 import Timeline from '@/components/sections/Timeline'
 import Skills from '@/components/sections/Skills'
+import Education from '@/components/sections/Education'
 import Portfolio from '@/components/sections/Portfolio'
 import Contact from '@/components/sections/Contact'
 import Honors from '@/components/sections/Honors'
@@ -20,6 +21,7 @@ export default function HomePage() {
           <aside className="w-full shrink-0 lg:w-72">
             <About />
             <Skills />
+            <Education />
           </aside>
           {/* 右侧主栏：经历 */}
           <main className="min-w-0 flex-1">
