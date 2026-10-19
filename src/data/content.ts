@@ -127,5 +127,7 @@ export const contact = {
   heading: { zh: '联系我', en: 'Contact' },
   desc: { zh: '欢迎交流想法、合作机会，或者只是打个招呼。', en: 'Open to conversations, collaboration or just a hello.' },
   email: 'xingyue2021@yeah.net',
+  phone: '+86 159 8163 0722',
   wechatHint: { zh: '微信扫码添加', en: 'Scan to add WeChat' },
+  wechatQrSrc: `${import.meta.env.BASE_URL}images/wechat-qr.png`,
 }
