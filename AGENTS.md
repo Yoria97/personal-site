@@ -129,3 +129,9 @@ npx shadcn@latest add <component-name>
 - **视觉主题**：极简轻量风格（近黑文字 + 纯白背景 + 单一强调色），强调色取自用户品牌色 `#4DBAD5`，已换算为 `oklch(0.737 0.105 217.011)` 写入 `src/index.css` 的 `--accent` / `--ring` / `--chart-1`，浅色与暗色模式均已适配。
 - **部署**：已通过 `@codeflicker/frontend-cloud-cli` 部署，项目 ID `xingyue03-personal-site`，配置文件见根目录 `.static-site-deploy.json`；后续更新内容后重新 `pnpm build` 再执行部署命令即可覆盖发布。
 - **访问权限**：默认白名单访问，需要在 https://myflicker.corp.kuaishou.com/web-artifacts/detail?id=24221&tab=AccessControl 调整为公开或增减白名单成员。
+
+## 公网部署补充说明（GitHub Pages）
+
+- 为了能在 GitHub Actions（公网环境）中构建，已移除内网专属依赖 `@codeflicker/appwrite` 及 `.npmrc` 内网源配置，改用公共 npm 源 `https://registry.npmjs.org`，并以 `package-lock.json` + `npm ci` 作为 CI 安装方式（原 `pnpm-lock.yaml` 已移除，不再使用 pnpm）。
+- 线上地址：https://yoria97.github.io/personal-site/ ，对应 GitHub 仓库 `Yoria97/personal-site`，`main` 分支推送后由 `.github/workflows/deploy.yml` 自动构建并发布到 GitHub Pages。
+- `vite.config.ts` 中已设置 `base: '/personal-site/'`，与 GitHub Pages 的子路径一致；若仓库改名，需同步修改该 `base` 值。
