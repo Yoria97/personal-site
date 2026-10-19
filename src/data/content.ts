@@ -10,6 +10,10 @@ export const profile = {
   },
   avatarInitials: 'XY',
   location: { zh: '中国 · 成都', en: 'Chengdu, China' },
+  education: {
+    zh: 'NUS 可持续设计硕士 · 天津大学城乡规划本科',
+    en: 'M.Sc. Sustainable Design, NUS · B.Eng. Urban Planning, Tianjin University',
+  },
 }
 
 export const about = {

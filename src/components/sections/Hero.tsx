@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { profile } from '@/data/content'
-import { ArrowDown, Mail } from 'lucide-react'
+import { ArrowDown, GraduationCap, Mail } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -16,6 +16,12 @@ export default function Hero() {
         {profile.title.zh}
         <span className="mx-1.5 text-muted-foreground">·</span>
         {profile.title.en}
+      </p>
+      <p className="animate-in fade-in slide-in-from-bottom-3 duration-700 mt-2 flex items-center gap-1.5 text-xs text-muted-foreground/80 sm:text-sm">
+        <GraduationCap className="size-3.5 shrink-0" />
+        {profile.education.zh}
+        <span className="text-muted-foreground/40">·</span>
+        {profile.education.en}
       </p>
       <p className="animate-in fade-in slide-in-from-bottom-4 duration-700 mt-5 max-w-md text-sm leading-relaxed text-muted-foreground sm:text-base">
         {profile.tagline.zh}
