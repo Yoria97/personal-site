@@ -84,6 +84,8 @@ export const skills = [
   },
 ]
 
+const asset = (p: string) => `${import.meta.env.BASE_URL}${p}`
+
 export const portfolio = [
   {
     title: { zh: '商审对客 Agent 演进方案', en: 'Customer-Facing Agent Evolution Framework' },
@@ -93,6 +95,7 @@ export const portfolio = [
     },
     tag: { zh: '智能客服', en: 'Customer Service AI' },
     link: '#',
+    images: [asset('images/portfolio/customer-agent-1.png'), asset('images/portfolio/customer-agent-2.png')],
   },
   {
     title: { zh: '灵轮 · 智能归因工作台', en: 'Linglun · Intelligent Attribution Platform' },
@@ -102,6 +105,7 @@ export const portfolio = [
     },
     tag: { zh: 'LLM 智能体', en: 'LLM Agents' },
     link: '#',
+    images: [asset('images/portfolio/attribution-1.png'), asset('images/portfolio/attribution-2.png')],
   },
   {
     title: { zh: 'GOODGIS规划工具平台', en: 'GoodGIS Planning Tooling Platform' },
@@ -111,6 +115,7 @@ export const portfolio = [
     },
     tag: { zh: '软件开发', en: 'Software Dev' },
     link: '#',
+    video: asset('videos/goodgis-demo.mp4'),
   },
   {
     title: { zh: '新加坡组屋能源 / 水资源自供给研究', en: 'HDB Energy & Water Self-Sufficiency Research' },
