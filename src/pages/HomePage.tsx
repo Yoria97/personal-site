@@ -1,4 +1,5 @@
 import Hero from '@/components/sections/Hero'
+import Nav from '@/components/sections/Nav'
 import About from '@/components/sections/About'
 import Timeline from '@/components/sections/Timeline'
 import Skills from '@/components/sections/Skills'
@@ -10,12 +11,27 @@ import Footer from '@/components/sections/Footer'
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <Nav />
       <Hero />
-      <About />
-      <Timeline />
-      <Skills />
-      <Portfolio />
-      <Contact />
+      {/* 双栏主体 */}
+      <div className="mx-auto max-w-5xl px-6 pb-0 pt-10 sm:px-10">
+        <div className="flex flex-col gap-0 lg:flex-row lg:gap-16">
+          {/* 左侧窄栏：简介 + 技能 + 联系 */}
+          <aside className="w-full shrink-0 lg:w-72">
+            <About />
+            <Skills />
+            <Contact />
+          </aside>
+          {/* 右侧主栏：经历 */}
+          <main className="min-w-0 flex-1">
+            <Timeline />
+          </main>
+        </div>
+      </div>
+      {/* 作品全宽展示 */}
+      <div className="mx-auto max-w-5xl px-6 sm:px-10">
+        <Portfolio />
+      </div>
       <Honors />
       <Footer />
     </div>

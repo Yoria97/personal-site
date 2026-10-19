@@ -3,7 +3,7 @@ import { about } from '@/data/content'
 
 export default function About() {
   return (
-    <section id="about" className="mx-auto max-w-2xl px-6 py-20 scroll-mt-20">
+    <section id="about" className="py-10 scroll-mt-20">
       <SectionHeading title={`${about.heading.zh} · ${about.heading.en}`} index="01" />
       <div className="space-y-6">
         {about.paragraphs.map((p) => (

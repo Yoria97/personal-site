@@ -6,9 +6,9 @@ export default function SectionHeading({
   index: string
 }) {
   return (
-    <div className="mb-10 flex items-baseline gap-3">
-      <span className="text-xs font-medium text-muted-foreground">{index}</span>
-      <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
+    <div className="mb-8">
+      <h2 className="text-xl font-bold tracking-tight text-foreground">{title}</h2>
+      <div className="mt-2 h-0.5 w-full bg-border" />
     </div>
   )
 }

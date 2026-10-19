@@ -7,7 +7,7 @@ export default function Contact() {
   const [showQr, setShowQr] = useState(false)
 
   return (
-    <section id="contact" className="mx-auto max-w-2xl px-6 py-20">
+    <section id="contact" className="py-10">
       <SectionHeading title={`${contact.heading.zh} · ${contact.heading.en}`} index="05" />
       <p className="mb-10 max-w-md text-sm leading-relaxed text-muted-foreground sm:text-base">
         {contact.desc.zh}
